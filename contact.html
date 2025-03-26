@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购买服务 - Leonisp</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Leonisp</h1>
+                <p>高速稳定的双ISP节点服务</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="pricing.html">套餐价格</a></li>
+                    <li><a href="locations.html">节点位置</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html" class="active">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>购买服务</h1>
+            <p>选择支付方式并完成购买</p>
+        </div>
+    </section>
+
+    <section class="purchase-section">
+        <div class="container">
+            <div class="purchase-grid">
+                <!-- 订单信息 -->
+                <div class="order-summary">
+                    <h2>订单信息</h2>
+                    <div class="order-details">
+                        <div class="order-item">
+                            <span class="label">类型：</span>
+                            <span class="value" id="planType">个人套餐</span>
+                        </div>
+                        <div class="order-item">
+                            <span class="label">带宽：</span>
+                            <span class="value" id="bandwidth">300Mbps</span>
+                        </div>
+                        <div class="order-item">
+                            <span class="label">付款周期：</span>
+                            <span class="value" id="period">月付</span>
+                        </div>
+                        <div class="order-item">
+                            <span class="label">单价：</span>
+                            <span class="value" id="price">¥170</span>
+                        </div>
+                        <div class="order-item total">
+                            <span class="label">总计：</span>
+                            <span class="value" id="total">¥170</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 支付方式 -->
+                <div class="payment-methods">
+                    <h2>选择支付方式</h2>
+                    <div class="payment-options">
+                        <div class="payment-option">
+                            <input type="radio" name="payment" id="alipay" value="alipay" checked>
+                            <label for="alipay">
+                                <i class="fab fa-alipay"></i>
+                                <span>支付宝</span>
+                            </label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" name="payment" id="wechat" value="wechat">
+                            <label for="wechat">
+                                <i class="fab fa-weixin"></i>
+                                <span>微信支付</span>
+                            </label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" name="payment" id="bank" value="bank">
+                            <label for="bank">
+                                <i class="fas fa-university"></i>
+                                <span>银行转账</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 支付二维码区域 -->
+                    <div class="payment-qr">
+                        <div class="qr-container">
+                            <img src="imagesalipayqr.jpg" alt="支付宝支付二维码" id="alipayQR" class="qr-image">
+                            <img src="imageswechatqr.jpg" alt="微信支付二维码" id="wechatQR" class="qr-image hidden">
+                        </div>
+                        <p class="qr-tip" id="alipayTip">请使用支付宝扫描二维码完成支付</p>
+                        <p class="qr-tip hidden" id="wechatTip">请使用微信扫描二维码完成支付</p>
+                    </div>
+
+                    <!-- 银行转账信息 -->
+                    <div class="bank-info hidden">
+                        <h3>银行转账信息</h3>
+                        <div class="bank-details">
+                            <p><strong>开户银行：</strong>中国工商银行</p>
+                            <p><strong>账户名称：</strong>上海莱昂网络科技有限公司</p>
+                            <p><strong>银行账号：</strong>暂不支持</p>
+                            <p><strong>转账金额：</strong><span id="bankAmount">¥170</span></p>
+                            <p><strong>转账备注：</strong>Leonisp服务费</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 订单备注 -->
+            <div class="order-notes">
+                <h3>订单备注</h3>
+                <div class="note-content">
+                    <p><i class="fas fa-info-circle"></i> 支付完成后，请将支付凭证发送至客服邮箱：leonmmichealdazzle100614@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> 我们将在收到支付凭证后1小时内为您开通服务</p>
+                    <p><i class="fas fa-shield-alt"></i> 请自觉支付对应金额，否则将无法开通服务，并且没收财产，详情可见<a href="moshocaochang.html" class="warning-link">警告说明</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Leonisp</h3>
+                    <p>为您的跨境电商业务提供稳定、高速的网络连接解决方案</p>
+                </div>
+                <div class="footer-col">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="pricing.html">套餐价格</a></li>
+                        <li><a href="locations.html">节点位置</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>联系方式</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> leonmmichealdazzle100614@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +86 400-123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 上海市浦东新区张江高科技园区</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>关注我们</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="关注我们的微信" title="微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" aria-label="关注我们的微博" title="微博"><i class="fab fa-weibo"></i></a>
+                        <a href="#" aria-label="关注我们的QQ" title="QQ"><i class="fab fa-qq"></i></a>
+                        <a href="#" aria-label="关注我们的领英" title="领英"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Leonisp 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+</body>
+</html> 

@@ -1,0 +1,342 @@
+/* 套餐价格页面样式 */
+.page-header {
+  background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../images/pricing-header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.page-header h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.page-header p {
+  font-size: 18px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 标签切换样式 */
+.pricing-tabs {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tab-btn {
+  padding: 12px 25px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  color: var(--dark-color);
+}
+
+.tab-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.tab-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* 标签内容样式 */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab-content h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+.tab-content p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #777;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 价格卡片样式 */
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: var(--transition);
+  position: relative;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--primary-color);
+}
+
+.pricing-card.featured::before {
+  content: '推荐';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.pricing-card.premium {
+  border: 2px solid var(--accent-color);
+}
+
+.pricing-card.premium::before {
+  content: '高级';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.pricing-header {
+  background-color: #f9f9f9;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-header h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--dark-color);
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.period {
+  font-size: 16px;
+  color: #777;
+  margin-left: 5px;
+}
+
+.pricing-features {
+  padding: 30px;
+}
+
+.pricing-features ul li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-features ul li i {
+  color: var(--primary-color);
+  margin-right: 10px;
+  min-width: 16px;
+}
+
+.pricing-footer {
+  padding: 0 30px 30px;
+  text-align: center;
+}
+
+.pricing-footer .btn {
+  width: 100%;
+}
+
+/* FAQ部分样式 */
+.faq {
+  background-color: white;
+  padding: 60px 0;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.faq-item {
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.faq-item p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* CTA部分样式 */
+.cta {
+  background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(52, 152, 219, 0.9)), url('../images/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta .btn-primary {
+  background-color: white;
+  color: var(--primary-color);
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+.cta .btn-primary:hover {
+  background-color: var(--light-color);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 60px 0;
+  }
+  
+  .page-header h2 {
+    font-size: 32px;
+  }
+  
+  .tab-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-btn {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .pricing-card {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta h2 {
+    font-size: 28px;
+  }
+  
+  .cta p {
+    font-size: 16px;
+  }
+}
+
+/* 年度价格蓝色样式 */
+.annual-price {
+    color: #3498db; /* 蓝色 */
+    font-weight: bold;
+}
+
+/* 月度价格样式 */
+.monthly-price {
+    color: #3498db; /* 蓝色 */
+    font-weight: bold;
+}
+
+/* 季度价格样式 */
+.quarterly-price {
+    color: #3498db; /* 蓝色 */
+    font-weight: bold;
+}

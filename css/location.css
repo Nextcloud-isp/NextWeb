@@ -1,0 +1,397 @@
+/* 节点位置页面样式 */
+:root {
+  --primary-color: #4a6cf7;
+  --secondary-color: #6c757d;
+  --border-radius: 8px;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+.locations-map {
+  padding: 60px 0;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.world-map {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.world-map-background {
+  width: 100%;
+  height: 500px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: #f0f8ff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                    repeating-linear-gradient(0deg, transparent, transparent 20px, #e6e6e6 20px, #e6e6e6 40px),
+                    repeating-linear-gradient(90deg, transparent, transparent 20px, #e6e6e6 20px, #e6e6e6 40px);
+  position: relative;
+}
+
+.world-map-background:after {
+  content: "世界地图";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #666;
+  font-weight: bold;
+}
+
+.map-markers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-marker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.marker-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  position: relative;
+  top: 4px;
+  left: 4px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 0 4px rgba(74, 108, 247, 0.3);
+}
+
+.marker-dot.available {
+  background-color: #28a745;
+  box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.3);
+}
+
+.marker-dot.unavailable {
+  background-color: #dc3545;
+  box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.3);
+}
+
+.marker-dot.coming-soon {
+  background-color: #ffc107;
+  box-shadow: 0 0 0 4px rgba(255, 193, 7, 0.3);
+}
+
+.marker-tooltip {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  min-width: 120px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.marker-tooltip h4 {
+  margin: 0 0 5px 0;
+  color: var(--primary-color);
+}
+
+.marker-tooltip p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.marker-tooltip:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid white;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+.map-marker:hover .marker-dot {
+  transform: scale(1.5);
+}
+
+.map-marker:hover .marker-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.locations-list {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+}
+
+.region-container {
+  margin-top: 40px;
+}
+
+.region {
+  margin-bottom: 50px;
+}
+
+.region h3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.region h3 i {
+  margin-right: 10px;
+}
+
+.nodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.node-item {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 25px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.node-item:hover {
+  transform: translateY(-5px);
+}
+
+.node-icon {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.node-item h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.node-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.node-status.available {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.node-status.unavailable {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.node-status.coming-soon {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.node-details {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.node-details p {
+  margin: 8px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.node-details p i {
+  margin-right: 8px;
+  color: var(--primary-color);
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.network-features {
+  padding: 60px 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.location-selection {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.selection-steps {
+  margin-top: 40px;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex-grow: 1;
+}
+
+.step-content h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .nodes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .step-number {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/* 地点特定位置样式 - 替代内联样式 */
+/* 亚太地区节点 */
+.map-marker.thailand {
+  top: 45%;
+  left: 75%;
+}
+
+.map-marker.malaysia {
+  top: 50%;
+  left: 77%;
+}
+
+.map-marker.vietnam {
+  top: 47%;
+  left: 79%;
+}
+
+.map-marker.philippines {
+  top: 43%;
+  left: 81%;
+}
+
+/* 欧洲地区节点 */
+.map-marker.uk {
+  top: 30%;
+  left: 45%;
+}
+
+.map-marker.germany {
+  top: 32%;
+  left: 48%;
+}
+
+.map-marker.france {
+  top: 34%;
+  left: 46%;
+}
+
+.map-marker.italy {
+  top: 36%;
+  left: 50%;
+}
+
+.map-marker.spain {
+  top: 38%;
+  left: 44%;
+}

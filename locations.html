@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>节点位置 - Leonisp</title>
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Leonisp</h1>
+                <p>高速稳定的双ISP节点服务</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="pricing.html">套餐价格</a></li>
+                    <li><a href="locations.html" class="active">节点位置</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>全球节点位置</h1>
+            <p>我们在全球多个地区部署了高速稳定的双ISP节点</p>
+        </div>
+    </section>
+
+    <section class="locations-map">
+        <div class="container">
+            <div class="map-container">
+                <div class="world-map-background"></div>
+                <div class="map-markers">
+                    <!-- 亚太地区节点标记 -->
+                    <div class="map-marker thailand" data-location="泰国">
+                        <div class="marker-dot available"></div>
+                        <div class="marker-tooltip">
+                            <h4>泰国</h4>
+                            <p>可用</p>
+                        </div>
+                    </div>
+                    <div class="map-marker malaysia" data-location="马来西亚">
+                        <div class="marker-dot available"></div>
+                        <div class="marker-tooltip">
+                            <h4>马来西亚</h4>
+                            <p>可用</p>
+                        </div>
+                    </div>
+                    <div class="map-marker vietnam" data-location="越南">
+                        <div class="marker-dot available"></div>
+                        <div class="marker-tooltip">
+                            <h4>越南</h4>
+                            <p>可用</p>
+                        </div>
+                    </div>
+                    <div class="map-marker philippines" data-location="菲律宾">
+                        <div class="marker-dot available"></div>
+                        <div class="marker-tooltip">
+                            <h4>菲律宾</h4>
+                            <p>可用</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 欧洲地区节点标记 -->
+                    <div class="map-marker uk" data-location="英国">
+                        <div class="marker-dot available"></div>
+                        <div class="marker-tooltip">
+                            <h4>英国</h4>
+                            <p>可用</p>
+                        </div>
+                    </div>
+                    <div class="map-marker germany" data-location="德国">
+                        <div class="marker-dot available"></div>
+                        <div class="marker-tooltip">
+                            <h4>德国</h4>
+                            <p>可用</p>
+                        </div>
+                    </div>
+                    <div class="map-marker france" data-location="法国">
+                        <div class="marker-dot available"></div>
+                        <div class="marker-tooltip">
+                            <h4>法国</h4>
+                            <p>可用</p>
+                        </div>
+                    </div>
+                    <div class="map-marker italy" data-location="意大利">
+                        <div class="marker-dot available"></div>
+                        <div class="marker-tooltip">
+                            <h4>意大利</h4>
+                            <p>可用</p>
+                        </div>
+                    </div>
+                    <div class="map-marker spain" data-location="西班牙">
+                        <div class="marker-dot available"></div>
+                        <div class="marker-tooltip">
+                            <h4>西班牙</h4>
+                            <p>可用</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="locations-list">
+        <div class="container">
+            <h2>节点详情</h2>
+            <div class="region-container">
+                <div class="region">
+                    <h3><i class="fas fa-globe-asia"></i> 亚太地区</h3>
+                    <div class="nodes-grid">
+                        <div class="node-item">
+                            <div class="node-icon"><i class="fas fa-server"></i></div>
+                            <h4>泰国</h4>
+                            <span class="node-status available">可用</span>
+                            <div class="node-details">
+                                <p><i class="fas fa-tachometer-alt"></i> 延迟: 80-120ms</p>
+                                <p><i class="fas fa-network-wired"></i> 双ISP线路</p>
+                                <p><i class="fas fa-shield-alt"></i> 99.9%可用性</p>
+                            </div>
+                            <a href="pricing.html" class="btn btn-outline">查看价格</a>
+                        </div>
+                        <div class="node-item">
+                            <div class="node-icon"><i class="fas fa-server"></i></div>
+                            <h4>马来西亚</h4>
+                            <span class="node-status available">可用</span>
+                            <div class="node-details">
+                                <p><i class="fas fa-tachometer-alt"></i> 延迟: 70-110ms</p>
+                                <p><i class="fas fa-network-wired"></i> 双ISP线路</p>
+                                <p><i class="fas fa-shield-alt"></i> 99.9%可用性</p>
+                            </div>
+                            <a href="pricing.html" class="btn btn-outline">查看价格</a>
+                        </div>
+                        <div class="node-item">
+                            <div class="node-icon"><i class="fas fa-server"></i></div>
+                            <h4>越南</h4>
+                            <span class="node-status available">可用</span>
+                            <div class="node-details">
+                                <p><i class="fas fa-tachometer-alt"></i> 延迟: 60-100ms</p>
+                                <p><i class="fas fa-network-wired"></i> 双ISP线路</p>
+                                <p><i class="fas fa-shield-alt"></i> 99.9%可用性</p>
+                            </div>
+                            <a href="pricing.html" class="btn btn-outline">查看价格</a>
+                        </div>
+                        <div class="node-item">
+                            <div class="node-icon"><i class="fas fa-server"></i></div>
+                            <h4>菲律宾</h4>
+                            <span class="node-status available">可用</span>
+                            <div class="node-details">
+                                <p><i class="fas fa-tachometer-alt"></i> 延迟: 90-130ms</p>
+                                <p><i class="fas fa-network-wired"></i> 双ISP线路</p>
+                                <p><i class="fas fa-shield-alt"></i> 99.9%可用性</p>
+                            </div>
+                            <a href="pricing.html" class="btn btn-outline">查看价格</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="region">
+                    <h3><i class="fas fa-globe-europe"></i> 欧洲地区</h3>
+                    <div class="nodes-grid">
+                        <div class="node-item">
+                            <div class="node-icon"><i class="fas fa-server"></i></div>
+                            <h4>英国</h4>
+                            <span class="node-status available">可用</span>
+                            <div class="node-details">
+                                <p><i class="fas fa-tachometer-alt"></i> 延迟: 200-250ms</p>
+                                <p><i class="fas fa-network-wired"></i> 双ISP线路</p>
+                                <p><i class="fas fa-shield-alt"></i> 99.9%可用性</p>
+                            </div>
+                            <a href="pricing.html" class="btn btn-outline">查看价格</a>
+                        </div>
+                        <div class="node-item">
+                            <div class="node-icon"><i class="fas fa-server"></i></div>
+                            <h4>德国</h4>
+                            <span class="node-status available">可用</span>
+                            <div class="node-details">
+                                <p><i class="fas fa-tachometer-alt"></i> 延迟: 210-260ms</p>
+                                <p><i class="fas fa-network-wired"></i> 双ISP线路</p>
+                                <p><i class="fas fa-shield-alt"></i> 99.9%可用性</p>
+                            </div>
+                            <a href="pricing.html" class="btn btn-outline">查看价格</a>
+                        </div>
+                        <div class="node-item">
+                            <div class="node-icon"><i class="fas fa-server"></i></div>
+                            <h4>法国</h4>
+                            <span class="node-status available">可用</span>
+                            <div class="node-details">
+                                <p><i class="fas fa-tachometer-alt"></i> 延迟: 220-270ms</p>
+                                <p><i class="fas fa-network-wired"></i> 双ISP线路</p>
+                                <p><i class="fas fa-shield-alt"></i> 99.9%可用性</p>
+                            </div>
+                            <a href="pricing.html" class="btn btn-outline">查看价格</a>
+                        </div>
+                        <div class="node-item">
+                            <div class="node-icon"><i class="fas fa-server"></i></div>
+                            <h4>意大利</h4>
+                            <span class="node-status available">可用</span>
+                            <div class="node-details">
+                                <p><i class="fas fa-tachometer-alt"></i> 延迟: 230-280ms</p>
+                                <p><i class="fas fa-network-wired"></i> 双ISP线路</p>
+                                <p><i class="fas fa-shield-alt"></i> 99.9%可用性</p>
+                            </div>
+                            <a href="pricing.html" class="btn btn-outline">查看价格</a>
+                        </div>
+                        <div class="node-item">
+                            <div class="node-icon"><i class="fas fa-server"></i></div>
+                            <h4>西班牙</h4>
+                            <span class="node-status available">可用</span>
+                            <div class="node-details">
+                                <p><i class="fas fa-tachometer-alt"></i> 延迟: 240-290ms</p>
+                                <p><i class="fas fa-network-wired"></i> 双ISP线路</p>
+                                <p><i class="fas fa-shield-alt"></i> 99.9%可用性</p>
+                            </div>
+                            <a href="pricing.html" class="btn btn-outline">查看价格</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="network-features">
+        <div class="container">
+            <h2>我们的网络特点</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>高速连接</h3>
+                    <p>所有节点均提供300Mbps至800Mbps的超高速连接，满足各类业务需求</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>双ISP保障</h3>
+                    <p>双ISP线路设计，确保网络连接稳定可靠，不会中断</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>自动故障转移</h3>
+                    <p>当一条线路出现问题时，系统会自动切换到备用线路，确保服务不中断</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>实时监控</h3>
+                    <p>24小时监控所有节点的运行状态，确保服务质量</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-selection">
+        <div class="container">
+            <h2>如何选择最适合您的节点</h2>
+            <div class="selection-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>确定目标市场</h3>
+                        <p>根据您的业务主要面向的市场区域选择节点，例如东南亚业务选择亚太地区节点</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>考虑网络延迟</h3>
+                        <p>选择与您目标用户地理位置最近的节点，以获得最低的网络延迟</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>评估带宽需求</h3>
+                        <p>根据您的业务规模和流量需求，选择合适的带宽套餐</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>联系我们获取建议</h3>
+                        <p>如果您不确定哪个节点最适合您，请联系我们的技术团队获取专业建议</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>准备好提升您的网络体验了吗？</h2>
+            <p>选择Leonisp，享受稳定、高速的双ISP节点服务</p>
+            <a href="contact.html" class="btn btn-primary">立即联系我们</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Leonisp</h3>
+                    <p>为您的跨境电商业务提供稳定、高速的网络连接解决方案</p>
+                </div>
+                <div class="footer-col">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="pricing.html">套餐价格</a></li>
+                        <li><a href="locations.html">节点位置</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>联系方式</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> leonmmichealdazzle100614@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +86 400-123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 上海市浦东新区张江高科技园区</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>关注我们</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="关注我们的微信" title="微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" aria-label="关注我们的微博" title="微博"><i class="fab fa-weibo"></i></a>
+                        <a href="#" aria-label="关注我们的QQ" title="QQ"><i class="fab fa-qq"></i></a>
+                        <a href="#" aria-label="关注我们的领英" title="领英"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Leonisp 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-top" aria-label="回到页面顶部" title="回到顶部">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

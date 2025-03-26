@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>套餐价格 - Leonisp</title>
+    <link rel="stylesheet" href="css/indexstyle.css">
+    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/shared-plan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Leonisp</h1>
+                <p>高速稳定的双ISP节点服务</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="pricing.html" class="active">套餐价格</a></li>
+                    <li><a href="locations.html">节点位置</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>套餐价格</h1>
+            <p>为您的业务选择最合适的套餐</p>
+        </div>
+    </section>
+
+    <section class="pricing-plans">
+        <div class="container">
+            <div class="pricing-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="monthly">月付</button>
+                    <button class="tab-btn" data-tab="quarterly">季付</button>
+                    <button class="tab-btn" data-tab="yearly">年付</button>
+                </div>
+                
+                <div class="tab-content active" id="monthly">
+                    <div class="pricing-cards">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>个人套餐</h3>
+                                <div class="price">
+                                    <span class="amount monthly-price">¥170</span>
+                                    <span class="period">/月</span>
+                                </div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 独享300Mbps带宽</li>
+                                    <li><i class="fas fa-check"></i> 无限流量</li>
+                                    <li><i class="fas fa-check"></i> 7*24小时技术支持</li>
+                                    <li><i class="fas fa-check"></i> 全球节点优化</li>
+                                    <li><i class="fas fa-check"></i> 适合个人使用</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=personal&bandwidth=300Mbps&period=monthly&price=170" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-card featured">
+                            <div class="pricing-header">
+                                <span class="popular-badge">最受欢迎</span>
+                                <h3>运营套餐</h3>
+                                <div class="price">
+                                    <span class="amount monthly-price">¥180</span>
+                                    <span class="period">/月</span>
+                                </div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 500Mbps带宽</li>
+                                    <li><i class="fas fa-check"></i> 双ISP线路</li>
+                                    <li><i class="fas fa-check"></i> 24/7技术支持</li>
+                                    <li><i class="fas fa-check"></i> 99.9%可用性保证</li>
+                                    <li><i class="fas fa-check"></i> 优先技术支持</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=business&bandwidth=500Mbps&period=monthly&price=180" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <span class="pro-badge">专业定制</span>
+                                <h3>专业套餐</h3>
+                                <div class="price">
+                                    <span class="amount monthly-price">¥450</span>
+                                    <span class="period">/月</span>
+                                </div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 独享1Gbps带宽</li>
+                                    <li><i class="fas fa-check"></i> 无限流量</li>
+                                    <li><i class="fas fa-check"></i> 优先技术支持</li>
+                                    <li><i class="fas fa-check"></i> 定制化解决方案</li>
+                                    <li><i class="fas fa-check"></i> VIP技术支持</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=professional&bandwidth=1Gbps&period=monthly&price=450" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-card shared">
+                            <div class="pricing-header">
+                                <span class="shared-badge">共享优惠</span>
+                                <h3>共享套餐</h3>
+                                <div class="price">
+                                    <span class="amount monthly-price">¥70</span>
+                                    <span class="period">/月/人</span>
+                                </div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 共享300Mbps带宽</li>
+                                    <li><i class="fas fa-check"></i> 无限流量</li>
+                                    <li><i class="fas fa-check"></i> 最多5人共享</li>
+                                    <li><i class="fas fa-check"></i> 全球节点访问</li>
+                                    <li><i class="fas fa-check"></i> 适合多人共同使用</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=shared&bandwidth=300Mbps&period=monthly&price=70" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="quarterly">
+                    <div class="pricing-cards">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>个人套餐</h3>
+                                <div class="price">
+                                    <span class="amount quarterly-price">¥459</span>
+                                    <span class="period">/季度</span>
+                                </div>
+                                <div class="price-note">相当于¥153/月</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 300Mbps带宽</li>
+                                    <li><i class="fas fa-check"></i> 双ISP线路</li>
+                                    <li><i class="fas fa-check"></i> 24/7技术支持</li>
+                                    <li><i class="fas fa-check"></i> 99.9%可用性保证</li>
+                                    <li><i class="fas fa-check"></i> 适合个人使用</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=personal&bandwidth=300Mbps&period=quarterly&price=153" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-card featured">
+                            <div class="pricing-header">
+                                <span class="popular-badge">最受欢迎</span>
+                                <h3>运营套餐</h3>
+                                <div class="price">
+                                    <span class="amount quarterly-price">¥486</span>
+                                    <span class="period">/季度</span>
+                                </div>
+                                <div class="price-note">相当于¥162/月</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 500Mbps带宽</li>
+                                    <li><i class="fas fa-check"></i> 双ISP线路</li>
+                                    <li><i class="fas fa-check"></i> 24/7技术支持</li>
+                                    <li><i class="fas fa-check"></i> 99.9%可用性保证</li>
+                                    <li><i class="fas fa-check"></i> 优先技术支持</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=business&bandwidth=500Mbps&period=quarterly&price=162" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>专业套餐</h3>
+                                <div class="price">
+                                    <span class="amount quarterly-price">¥513</span>
+                                    <span class="period">/季度</span>
+                                </div>
+                                <div class="price-note">相当于¥171/月</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 800Mbps带宽 <span class="customizable">(可定制更高)</span></li>
+                                    <li><i class="fas fa-check"></i> 双ISP线路</li>
+                                    <li><i class="fas fa-check"></i> 24/7技术支持</li>
+                                    <li><i class="fas fa-check"></i> 99.9%可用性保证</li>
+                                    <li><i class="fas fa-check"></i> VIP技术支持</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=professional&bandwidth=1Gbps&period=quarterly&price=405" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-card shared">
+                            <div class="pricing-header">
+                                <span class="shared-badge">节省成本</span>
+                                <h3>共享套餐</h3>
+                                <div class="price">
+                                    <span class="amount quarterly-price">¥189</span>
+                                    <span class="period">/季度/人</span>
+                                </div>
+                                <div class="price-note">3人共享，共计567元/季度</div>
+                                <div class="price-note">相当于¥63/月/人</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 可选带宽：
+                                        <ul class="bandwidth-options">
+                                            <li>300Mbps (63元/月/人)</li>
+                                            <li>500Mbps (72元/月/人)</li>
+                                            <li>800Mbps (81元/月/人)</li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-check"></i> 双ISP线路</li>
+                                    <li><i class="fas fa-check"></i> 24/7技术支持</li>
+                                    <li><i class="fas fa-check"></i> 99.9%可用性保证</li>
+                                    <li><i class="fas fa-check"></i> 适合多人共同使用</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=shared&bandwidth=300Mbps&period=quarterly&price=63" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="yearly">
+                    <div class="pricing-cards">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>个人套餐</h3>
+                                <div class="price">
+                                    <span class="amount annual-price">¥1632</span>
+                                    <span class="period">/年</span>
+                                </div>
+                                <div class="price-note">相当于¥136/月</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 300Mbps带宽</li>
+                                    <li><i class="fas fa-check"></i> 双ISP线路</li>
+                                    <li><i class="fas fa-check"></i> 24/7技术支持</li>
+                                    <li><i class="fas fa-check"></i> 99.9%可用性保证</li>
+                                    <li><i class="fas fa-check"></i> 适合个人使用</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=personal&bandwidth=300Mbps&period=annually&price=136" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-card featured">
+                            <div class="pricing-header">
+                                <span class="popular-badge">最受欢迎</span>
+                                <h3>运营套餐</h3>
+                                <div class="price">
+                                    <span class="amount annual-price">¥1728</span>
+                                    <span class="period">/年</span>
+                                </div>
+                                <div class="price-note">相当于¥144/月</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 500Mbps带宽</li>
+                                    <li><i class="fas fa-check"></i> 双ISP线路</li>
+                                    <li><i class="fas fa-check"></i> 24/7技术支持</li>
+                                    <li><i class="fas fa-check"></i> 99.9%可用性保证</li>
+                                    <li><i class="fas fa-check"></i> 优先技术支持</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=business&bandwidth=500Mbps&period=annually&price=144" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3>专业套餐</h3>
+                                <div class="price">
+                                    <span class="amount annual-price">¥4320</span>
+                                    <span class="period">/年</span>
+                                </div>
+                                <div class="price-note">相当于¥360/月</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 800Mbps带宽 <span class="customizable">(可定制更高)</span></li>
+                                    <li><i class="fas fa-check"></i> 双ISP线路</li>
+                                    <li><i class="fas fa-check"></i> 24/7技术支持</li>
+                                    <li><i class="fas fa-check"></i> 99.9%可用性保证</li>
+                                    <li><i class="fas fa-check"></i> VIP技术支持</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=professional&bandwidth=1Gbps&period=annually&price=360" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-card shared">
+                            <div class="pricing-header">
+                                <span class="shared-badge">节省成本</span>
+                                <h3>共享套餐</h3>
+                                <div class="price">
+                                    <span class="amount annual-price">¥672</span>
+                                    <span class="period">/年/人</span>
+                                </div>
+                                <div class="price-note">3人共享，共计2016元/年</div>
+                                <div class="price-note">相当于¥56/月/人</div>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> 可选带宽：
+                                        <ul class="bandwidth-options">
+                                            <li>300Mbps (60元/月/人)</li>
+                                            <li>500Mbps (70元/月/人)</li>
+                                            <li>800Mbps (80元/月/人)</li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-check"></i> 双ISP线路</li>
+                                    <li><i class="fas fa-check"></i> 24/7技术支持</li>
+                                    <li><i class="fas fa-check"></i> 99.9%可用性保证</li>
+                                    <li><i class="fas fa-check"></i> 适合多人共同使用</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="contact.html?plan=shared&bandwidth=300Mbps&period=annually&price=56" class="btn btn-primary">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p>共享套餐可享受每月减免20元优惠</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="available-locations">
+        <div class="container">
+            <h2>可用节点位置</h2>
+            <p>我们在全球多个地区部署了高速稳定的双ISP节点</p>
+            
+            <div class="location-grid">
+                <div class="location-card">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>泰国</h3>
+                    <p>亚太地区优质节点，低延迟高稳定性</p>
+                    <span class="status available">可用</span>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>马来西亚</h3>
+                    <p>东南亚优质线路，适合跨境电商业务</p>
+                    <span class="status available">可用</span>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>越南</h3>
+                    <p>东南亚优质线路，适合跨境电商业务</p>
+                    <span class="status available">可用</span>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>菲律宾</h3>
+                    <p>东南亚优质线路，适合跨境电商业务</p>
+                    <span class="status available">可用</span>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>英国</h3>
+                    <p>欧洲优质线路，适合欧洲市场业务</p>
+                    <span class="status available">可用</span>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>德国</h3>
+                    <p>欧洲优质线路，适合欧洲市场业务</p>
+                    <span class="status available">可用</span>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>法国</h3>
+                    <p>欧洲优质线路，适合欧洲市场业务</p>
+                    <span class="status available">可用</span>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>意大利</h3>
+                    <p>欧洲优质线路，适合欧洲市场业务</p>
+                    <span class="status available">可用</span>
+                </div>
+                <div class="location-card">
+                    <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>西班牙</h3>
+                    <p>欧洲优质线路，适合欧洲市场业务</p>
+                    <span class="status available">可用</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>常见问题</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何选择适合我的套餐？</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>根据您的业务需求选择合适的套餐。个人套餐适合小型网站或个人使用；运营套餐适合中小型电商或企业；专业套餐适合大型电商或有高带宽需求的企业。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何进行付款？</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们支持多种付款方式，包括支付宝、微信支付、银行转账等。选择套餐后，您将被引导至支付页面，选择您偏好的支付方式即可。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>可以随时更换套餐吗？</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>是的，您可以随时升级或降级您的套餐。升级套餐将立即生效，并按比例收取差价；降级套餐将在当前计费周期结束后生效。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何获取技术支持？</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们提供24/7全天候技术支持。您可以通过电子邮件、在线客服或电话联系我们的技术支持团队，我们将尽快回应并解决您的问题。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>是否提供退款服务？</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们提供7天无理由退款服务。如果您在购买后7天内对服务不满意，可以申请全额退款。超过7天的退款将按未使用时间比例计算。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>如何保证服务的稳定性？</h3>
+                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们采用双ISP线路设计，确保网络连接的稳定性和可靠性。同时，我们的技术团队24小时监控服务状态，及时处理可能出现的问题，保证99.9%的服务可用性。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>准备好提升您的网络体验了吗？</h2>
+            <p>选择Leonisp，享受稳定、高速的双ISP节点服务</p>
+            <a href="contact.html" class="btn btn-primary">立即联系我们</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Leonisp</h3>
+                    <p>为您的跨境电商业务提供稳定、高速的网络连接解决方案</p>
+                </div>
+                <div class="footer-col">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="pricing.html">套餐价格</a></li>
+                        <li><a href="locations.html">节点位置</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>联系方式</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> leonmmichealdazzle100614@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +86 400-123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 上海市浦东新区张江高科技园区</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>关注我们</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="关注我们的微信" title="微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" aria-label="关注我们的微博" title="微博"><i class="fab fa-weibo"></i></a>
+                        <a href="#" aria-label="关注我们的QQ" title="QQ"><i class="fab fa-qq"></i></a>
+                        <a href="#" aria-label="关注我们的领英" title="领英"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Leonisp 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scroll-top" aria-label="回到页面顶部" title="回到顶部">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

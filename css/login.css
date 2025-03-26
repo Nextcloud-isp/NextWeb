@@ -1,0 +1,223 @@
+/* 登录和注册页面样式 */
+.auth-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.auth-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 标签页样式 */
+.auth-tabs {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    background: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.auth-tab.active {
+    background: #fff;
+    color: #1a73e8;
+    box-shadow: 0 2px 0 #1a73e8;
+}
+
+/* 表单内容区域 */
+.auth-content {
+    display: none;
+    padding: 30px;
+}
+
+.auth-content.active {
+    display: block;
+}
+
+/* 表单样式 */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #333;
+}
+
+.input-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon i {
+    position: absolute;
+    left: 12px;
+    color: #666;
+}
+
+.input-icon input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.input-icon input:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    color: #666;
+}
+
+.form-tip {
+    font-size: 12px;
+    color: #666;
+}
+
+/* 验证码区域 */
+.verification-group {
+    margin-bottom: 0;
+}
+
+.verification-container {
+    display: flex;
+    gap: 10px;
+}
+
+.verification-container .input-icon {
+    flex: 1;
+}
+
+.btn-send-code {
+    white-space: nowrap;
+    padding: 0 15px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-send-code:hover {
+    background: #e0e0e0;
+}
+
+.btn-send-code:disabled {
+    background: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* 记住我和忘记密码 */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.forgot-password {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* 协议同意 */
+.agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.agreement label {
+    font-size: 14px;
+    color: #666;
+}
+
+.terms-link, .privacy-link {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.terms-link:hover, .privacy-link:hover {
+    text-decoration: underline;
+}
+
+/* 按钮样式 */
+.btn-auth {
+    width: 100%;
+    padding: 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-auth:hover {
+    background: #1557b0;
+}
+
+/* 响应式设计 */
+@media (max-width: 576px) {
+    .auth-container {
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    .auth-content {
+        padding: 20px;
+    }
+    
+    .verification-container {
+        flex-direction: column;
+    }
+    
+    .btn-send-code {
+        width: 100%;
+        padding: 12px;
+    }
+} 
