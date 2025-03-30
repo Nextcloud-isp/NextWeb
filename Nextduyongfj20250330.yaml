@@ -1,0 +1,8 @@
+proxies:
+  - name: "US-TK-跨境电商"
+    type: ss
+    server: tunnel-07312159.666888.biz
+    port: 23872
+    cipher: aes-128-gcm
+    password: Tg1212121@
+    udp: true
