@@ -1,0 +1,8 @@
+proxies:
+  - name: "daili"
+    type: ss
+    server: tunnel-07312159.666888.biz
+    port: 28564
+    cipher: aes-128-gcm
+    password: Tg1212121@
+    udp: true
