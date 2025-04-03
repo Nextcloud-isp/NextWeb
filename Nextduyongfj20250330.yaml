@@ -1,8 +1,33 @@
 proxies:
-  - name: "US-TK-跨境电商"
+  - name: "VN-跨境电商-TikTok-FB-专线"
+    type: ss
+    server: tunnel-07312159.666888.biz
+    port: 28564
+    cipher: aes-128-gcm
+    password: z0wTc4Sji2
+    udp: true
+    timeout: 5000
+    
+  - name: "US-跨境电商-TikTok-FB-专线"
     type: ss
     server: tunnel-07312159.666888.biz
     port: 23872
     cipher: aes-128-gcm
     password: Tg1212121@
     udp: true
+    timeout: 5000
+
+proxy-groups:
+  - name: "Auto Select"
+    type: url-test
+    proxies:
+      - VN-跨境电商-TikTok-FB-专线
+      - US-跨境电商-TikTok-FB-专线
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    tolerance: 50
+
+rules:
+  - DOMAIN-SUFFIX,google.com,Auto Select
+  - DOMAIN-SUFFIX,github.com,Auto Select
+  - MATCH,DIRECT
