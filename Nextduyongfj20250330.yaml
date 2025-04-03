@@ -6,7 +6,6 @@ proxies:
     cipher: aes-128-gcm
     password: z0wTc4Sji2
     udp: true
-    timeout: 5000
     
   - name: "US-跨境电商-TikTok-FB-专线"
     type: ss
@@ -15,7 +14,6 @@ proxies:
     cipher: aes-128-gcm
     password: Tg1212121@
     udp: true
-    timeout: 5000
 
 proxy-groups:
   - name: "Auto Select"
